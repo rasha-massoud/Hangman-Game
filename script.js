@@ -75,31 +75,31 @@ function fadeLetter(letterID) {
 
 function imageUpdate(guesses) {
     if (guesses==1){
-        document.getElementById("Image").src="Images\1.png";
+        document.getElementById("Image").src="Images/1.png";
     }
     else if (guesses==2){
-        document.getElementById("Image").src="Images\2.png";
+        document.getElementById("Image").src="Images/2.png";
     }
     else if (guesses==3){
-        document.getElementById("Image").src="Images\3.png";
+        document.getElementById("Image").src="Images/3.png";
     }
     else if (guesses==4){
-        document.getElementById("Image").src="Images\4.png";
+        document.getElementById("Image").src="Images/4.png";
     }
     else if (guesses==5){
-        document.getElementById("Image").src="Images\5.png";
+        document.getElementById("Image").src="Images/5.png";
     }
     else if (guesses==6){
-        document.getElementById("Image").src="Images\6.png";
+        document.getElementById("Image").src="Images/6.png";
     }
     else if (guesses==7){
-        document.getElementById("Image").src="Images\7.png";
+        document.getElementById("Image").src="Images/7.png";
     }
     else if (guesses==8){
-        document.getElementById("Image").src="Images\8.png";
+        document.getElementById("Image").src="Images/8.png";
     }
     else{
-        document.getElementById("Image").src="Images\9.png";
+        document.getElementById("Image").src="Images/9.png";
     }
 }
 

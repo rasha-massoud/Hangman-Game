@@ -44,14 +44,16 @@ function createDigitLine(str, val) {
 }
 
 var discoveredWord = [];
+var guess = 0;
 function fadeLetter(letterID) {
     const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
         'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
         'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
     console.log(selection);
-    if (typeof(selection) == "undefined") {
+    if (typeof (selection) == "undefined") {
         return;
     }
+    guess++;
     document.getElementById(letterID).style.backgroundColor = "gray";
     const letter = document.getElementById(letterID).innerText;
     for (var i = 0; i < selection.length; i++) {
@@ -60,6 +62,14 @@ function fadeLetter(letterID) {
             document.getElementById("Discovered").innerHTML = discoveredWord;
         }
     }
+    imageUpdate(guess);
+    if (guess == 9) {
+        alert("You Lost!");
+    }
+}
+
+function imageUpdate(guesses) {
+
 }
 
 

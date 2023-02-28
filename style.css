@@ -1,0 +1,70 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rosybrown;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 65px;
+    justify-content: center;
+}
+
+h2{
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#start {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 25%;
+    width: 50%;
+    font-size: 100%;
+    padding: 5% 10% auto auto;
+}
+
+#category1 {
+    background-color: gray;
+}
+
+#category2 {
+    background-color: gray;
+}
+
+#myCanvas {
+    margin-top: 10%;
+    width: 100%;
+    height: "150";
+    border: 1px solid #d3d3d3;
+}
+
+.letters {
+    float: left;
+    margin: 0 8px 10px 0;
+    list-style: none;
+    width: 17px;
+    height: 17px;
+    padding: 2px;
+    background: white;
+    color: rosybrown;
+    cursor: pointer;
+    border: solid 1px white;
+    display: flex;
+    flex-direction: row;
+}
+
+.letters:hover {
+        background: rosybrown;
+        border: solid 1px white;
+        color: white;
+    }

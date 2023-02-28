@@ -20,38 +20,39 @@
             </div>
             <canvas id="myCanvas"></canvas>
             <div onload="CreateAlphabet()">
-                <div class="letters" onclick="fadeLetter()"> A </div>
-                <div class="letters" onclick="fadeLetter()"> B </div>
-                <div class="letters" onclick="fadeLetter()"> C </div>
-                <div class="letters" onclick="fadeLetter()"> D </div>
-                <div class="letters" onclick="fadeLetter()"> E </div>
-                <div class="letters" onclick="fadeLetter()"> F </div>
-                <div class="letters" onclick="fadeLetter()"> G </div>
-                <div class="letters" onclick="fadeLetter()"> H </div>
-                <div class="letters" onclick="fadeLetter()"> I </div>
-                <div class="letters" onclick="fadeLetter()"> J </div>
-                <div class="letters" onclick="fadeLetter()"> K </div>
+                <div id="lettersA" onclick="fadeLetter(id)"> A </div>
+                <div id="lettersB" onclick="fadeLetter(id)"> B </div>
+                <div id="lettersC" onclick="fadeLetter(id)"> C </div>
+                <div id="lettersD" onclick="fadeLetter(id)"> D </div>
+                <div id="lettersE" onclick="fadeLetter(id)"> E </div>
+                <div id="lettersF" onclick="fadeLetter(id)"> F </div>
+                <div id="lettersG" onclick="fadeLetter(id)"> G </div>
+                <div id="lettersH" onclick="fadeLetter(id)"> H </div>
+                <div id="lettersI" onclick="fadeLetter(id)"> I </div>
+                <div id="lettersJ" onclick="fadeLetter(id)"> J </div>
+                <div id="lettersK" onclick="fadeLetter(id)"> K </div>
             </div>
             <div onload="CreateAlphabet()">
-                <div class="letters" onclick="fadeLetter()"> L </div>
-                <div class="letters" onclick="fadeLetter()"> M </div>
-                <div class="letters" onclick="fadeLetter()"> N </div>
-                <div class="letters" onclick="fadeLetter()"> O </div>
-                <div class="letters" onclick="fadeLetter()"> P </div>
-                <div class="letters" onclick="fadeLetter()"> Q </div>
-                <div class="letters" onclick="fadeLetter()"> R </div>
-                <div class="letters" onclick="fadeLetter()"> S </div>
-                <div class="letters" onclick="fadeLetter()"> T </div>
-                <div class="letters" onclick="fadeLetter()"> U </div>
-                <div class="letters" onclick="fadeLetter()"> V </div>
-                <div class="letters" onclick="fadeLetter()"> W </div>
-                <div class="letters" onclick="fadeLetter()"> X </div>
-                <div class="letters" onclick="fadeLetter()"> Y </div>
-                <div class="letters" onclick="fadeLetter()"> Z </div>
+                <div id="lettersL" onclick="fadeLetter(id)"> L </div>
+                <div id="lettersM" onclick="fadeLetter(id)"> M </div>
+                <div id="lettersN" onclick="fadeLetter(id)"> N </div>
+                <div id="lettersO" onclick="fadeLetter(id)"> O </div>
+                <div id="lettersP" onclick="fadeLetter(id)"> P </div>
+                <div id="lettersQ" onclick="fadeLetter(id)"> Q </div>
+                <div id="lettersR" onclick="fadeLetter(id)"> R </div>
+                <div id="lettersS" onclick="fadeLetter(id)"> S </div>
+                <div id="lettersT" onclick="fadeLetter(id)"> T </div>
+                <div id="lettersU" onclick="fadeLetter(id)"> U </div>
+                <div id="lettersV" onclick="fadeLetter(id)"> V </div>
+                <div id="lettersW" onclick="fadeLetter(id)"> W </div>
+                <div id="lettersX" onclick="fadeLetter(id)"> X </div>
+                <div id="lettersY" onclick="fadeLetter(id)"> Y </div>
+                <div id="lettersZ" onclick="fadeLetter(id)"> Z </div>
             </div>
         </div>
         <div>
             <h1>The progress!</h1>
+            <h2 id="Discovered"></h2>
         </div>
     </div>
     <script src="script.js" type="text/javascript"></script>

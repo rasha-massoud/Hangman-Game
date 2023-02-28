@@ -7,12 +7,12 @@ body {
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     font-size: 65px;
     justify-content: center;
 }
 
-h2{
+h2 {
     font-size: 45px;
     display: flex;
     justify-content: center;
@@ -48,7 +48,36 @@ h2{
     border: 1px solid #d3d3d3;
 }
 
-.letters {
+#Discovered{
+    color:white;
+}
+
+#lettersA,
+#lettersB,
+#lettersC,
+#lettersD,
+#lettersE,
+#lettersF,
+#lettersG,
+#lettersH,
+#lettersI,
+#lettersJ,
+#lettersK,
+#lettersL,
+#lettersM,
+#lettersN,
+#lettersO,
+#lettersP,
+#lettersQ,
+#lettersR,
+#lettersS,
+#lettersT,
+#lettersU,
+#lettersV,
+#lettersW,
+#lettersX,
+#lettersY,
+#lettersZ {
     float: left;
     margin: 0 8px 10px 0;
     list-style: none;
@@ -64,7 +93,7 @@ h2{
 }
 
 .letters:hover {
-        background: rosybrown;
-        border: solid 1px white;
-        color: white;
-    }
+    background: rosybrown;
+    border: solid 1px white;
+    color: white;
+}

@@ -49,18 +49,23 @@ function fadeLetter(letterID) {
     const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
         'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
         'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-    console.log(selection);
     if (typeof (selection) == "undefined") {
         return;
     }
-    guess++;
+    let found=false;
     document.getElementById(letterID).style.backgroundColor = "gray";
     const letter = document.getElementById(letterID).innerText;
     for (var i = 0; i < selection.length; i++) {
         if (letter.toLowerCase() == selection[i]) {
             discoveredWord[i] = letter.toLowerCase();
             document.getElementById("Discovered").innerHTML = discoveredWord;
+            found = true;
         }
+    }
+    if (found== false){
+        guess++;
+        console.log(guess);
+        found=false;
     }
     imageUpdate(guess);
     if (guess == 9) {
@@ -69,7 +74,33 @@ function fadeLetter(letterID) {
 }
 
 function imageUpdate(guesses) {
-
+    if (guesses==1){
+        document.getElementById("Image").src="Images\1.png";
+    }
+    else if (guesses==2){
+        document.getElementById("Image").src="Images\2.png";
+    }
+    else if (guesses==3){
+        document.getElementById("Image").src="Images\3.png";
+    }
+    else if (guesses==4){
+        document.getElementById("Image").src="Images\4.png";
+    }
+    else if (guesses==5){
+        document.getElementById("Image").src="Images\5.png";
+    }
+    else if (guesses==6){
+        document.getElementById("Image").src="Images\6.png";
+    }
+    else if (guesses==7){
+        document.getElementById("Image").src="Images\7.png";
+    }
+    else if (guesses==8){
+        document.getElementById("Image").src="Images\8.png";
+    }
+    else{
+        document.getElementById("Image").src="Images\9.png";
+    }
 }
 
 

@@ -1,4 +1,4 @@
-var selection ;
+var selection;
 
 function fruits() {
     createDigitLine("tendigitval", "#bc8f8f");;
@@ -9,7 +9,7 @@ function fruits() {
     document.getElementById("category1").style.backgroundColor = "white";
     document.getElementById("category2").style.backgroundColor = "gray";
     console.log(categoriesFruit[randomNumber1], categoriesFruit[randomNumber1].length);
-    selection=categoriesFruit[randomNumber1];
+    selection = categoriesFruit[randomNumber1];
     createDigitLine(categoriesFruit[randomNumber1], '#000000');
 }
 
@@ -23,7 +23,7 @@ function cities() {
     document.getElementById("category2").style.backgroundColor = "white";
     document.getElementById("category1").style.backgroundColor = "gray";
     console.log(categoriesCity[randomNumber1], categoriesCity[randomNumber1].length);
-    selection=categoriesCity[randomNumber1];
+    selection = categoriesCity[randomNumber1];
     createDigitLine(categoriesCity[randomNumber1], "#000000");
 }
 
@@ -43,21 +43,23 @@ function createDigitLine(str, val) {
     }
 }
 
-var discoveredWord=[];
+var discoveredWord = [];
 function fadeLetter(letterID) {
     const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
         'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
         'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+    console.log(selection);
+    if (typeof(selection) == "undefined") {
+        return;
+    }
     document.getElementById(letterID).style.backgroundColor = "gray";
     const letter = document.getElementById(letterID).innerText;
-    for (var i=0; i< selection.length; i++){
-        if (letter.toLowerCase() == selection[i]){
-            discoveredWord[i]=letter.toLowerCase();
-            document.getElementById("Discovered").innerHTML=discoveredWord;
+    for (var i = 0; i < selection.length; i++) {
+        if (letter.toLowerCase() == selection[i]) {
+            discoveredWord[i] = letter.toLowerCase();
+            document.getElementById("Discovered").innerHTML = discoveredWord;
         }
     }
-    // console.log (discoveredWord);
-    
 }
 
 
